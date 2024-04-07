@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-min_max() {
+inline min_max() {
 	int n=5,temp;
 	int a[n];
 	cout<<"Enter the Array : :";
@@ -26,6 +26,8 @@ min_max() {
 	for(int i=0; i<n; i++) {
 		cout<<a[i];
 	}
+	
+	return 0;
 
 }
 int main() {
