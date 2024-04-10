@@ -10,11 +10,12 @@ public:
     } 
     ~Test() { std::cout << "Destructor is executed\n"; } 
 }; 
-
+ static Test obj; 
+ 
 int main() 
-{
+{  
     std::cout << "main() starts\n"; 
-     static Test obj; 
+    
     std::cout << obj.a; 
     std::cout << "\nmain() terminates\n"; 
     return 0; 
