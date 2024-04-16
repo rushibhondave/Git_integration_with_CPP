@@ -1,0 +1,9 @@
+How much amount you have buy for chocolate::10
+
+Enter the price of a '1' chocolate ::1
+
+Total chocolate can be eat with his offer::14
+
+Remaining Wrappers with you are::2
+
+Total chocolate can you eat::44
