@@ -10,5 +10,8 @@ int main()
 	int cnt=0;
 	int l=str.length();
 	
-	for()
+	for(int i=0;i<l;i++)
+	{
+	     	
+	}
 }
