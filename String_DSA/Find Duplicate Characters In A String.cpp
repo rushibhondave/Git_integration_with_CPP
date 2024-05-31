@@ -1,26 +1,26 @@
-//Find Duplicate Characters In A String
 #include <iostream>
-#include <string> 
-#include <bits/stdc++.h>
+#include <string>
+
 using namespace std;
 
-int main()
-{
-	string str="Rushikesh";
-	int cnt=0;
-	int l=str.length();
-	
-	for(int i=0;i<l;i++)
-	{
-		for(int j=1;i<l;j++)
-		{
-			if(str[i]==str[j])
-			{
-				cnt++;
-				
-			}
-		}
-		cout<<"Repate Agin Charcater is:"<<str[i]<<cnt;
-	
-	}
+int main() {
+    string s;
+    cout << "Enter the String: ";
+    getline(cin, s);
+
+    int count[256] = {0};  // Array to count occurrences of each character
+
+    // Count the occurrences of each character in the string
+    for (int i = 0; i < s.length(); i++) {
+        count[s[i]]++;
+    }
+
+    cout << "Duplicate characters in the string are: ";
+    for (int i = 0; i < 256; i++) {
+        if (count[i] > 1) {
+            cout << i << " ";
+        }
+    }
+
+    return 0;
 }
